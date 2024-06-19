@@ -26,7 +26,7 @@ export default function TabTwoScreen() {
 
         <ThemedView style={styles.redes}>
           <Image source={require('@/assets/images/7.png')} style={styles.icon} />
-          <Pressable  onPress={() => Linking.openURL('https://www.linkedin.com/in/douglas-eduardo-a26327312/')}>
+          <Pressable  onPress={() => Linking.openURL('https://www.linkedin.com/in/luis-ros%C3%A1rio-752b09314/')}>
             <ThemedText>Linkedin</ThemedText>
           </Pressable>
         </ThemedView>
