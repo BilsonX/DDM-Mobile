@@ -13,7 +13,7 @@ export default function TabTwoScreen() {
       }
     >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Redes sociais</ThemedText>
+        <ThemedText type="title">Redes sociais:</ThemedText>
       </ThemedView>
 
       <ThemedView style={styles.contentContainer}>

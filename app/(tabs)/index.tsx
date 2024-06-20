@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, StyleSheet } from 'react-native';
+import { Image, StyleSheet, View } from 'react-native';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
@@ -16,6 +16,12 @@ export default function HomeScreen() {
       }
     >
       <ThemedView style={styles.sectionContainer}>
+        <View style={styles.circularImageContainer}>
+          <Image
+            source={require('@/assets/images/foto.jpeg')}
+            style={styles.circularImage}
+          />
+        </View>
         <ThemedText type="title" style={styles.titleText}>
           Bem-vindo ao MikotoPlace's!
         </ThemedText>
@@ -80,5 +86,14 @@ const styles = StyleSheet.create({
     lineHeight: 26,
     textAlign: 'justify',
   },
+  circularImageContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  circularImage: {
+    width: 150,
+    height: 150,
+    borderRadius: 75, // half of width and height to make it circular
+  },
 });
-
